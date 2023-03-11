@@ -1,0 +1,24 @@
+.footer_list_wrapper{
+    max-width: 18.75rem;
+    font-display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.footer_list_wrapper > .head {
+    color:#878787;
+    font-size: 0.874rem;
+}
+
+.footer_list_wrapper > .content_wrapper {
+    margin-top: 0.625rem;
+    font-size: 0.75rem;
+    font-weight: 100;
+    line-height: 1.25rem;
+}
+
+
+.content_wrapper  li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,155 @@
+
+.Product_Page_wrapper{
+    margin: 1% 15%;
+    display: flex;
+    gap: 3rem;
+}
+
+.left_wrapper{
+    width: 50vw;
+    /* background-color: #388e3c; */
+}
+
+.product_image_holder{
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    margin: 2% 5%;
+}
+
+.call_to_action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:1rem;
+}
+
+.call_to_action  p {
+    width: max-content;
+}
+
+.call_to_action > .buyNow{
+    margin-top: 0.625rem ;
+    padding: .625rem 1.25rem;
+    background-color: #2874f0;
+    color: #fff;
+    font-family: monospacex ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.call_to_action > .buyNow a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.call_to_action > .cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.625rem ;
+    padding: 0.625rem 1.25rem;
+    background-color: #fff ;
+    color: #2874f0;
+    border: 1px solid #2874f0;
+    font-family: monospacex ;
+    
+}
+
+
+.product_container .product_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.product_title > .title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.rating_wrapper > .rating {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    color: #fff;
+    background-color: #388e3c;
+    width: fit-content;
+    padding: 0.313rem 0.938rem;
+    border-radius: 0.625rem;
+    margin-top: 0.625rem;
+}
+
+.rating > svg {
+    margin-left: 0.313rem;
+}
+
+.reviews_wrapper > h4 {
+    color :#878787 ;
+    font-size: 0.938rem;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+}
+
+.product_price_wrapper {
+    display: flex;
+    /* gap: 1rem; */
+}
+
+.product_price_wrapper > .price_wrapper{
+
+margin-top: 1.25rem;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-size: 1.25rem;
+font-weight: 400;
+display: flex;
+align-items: center;
+}
+
+.discount_details  {
+    color: #878787;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.discount_details > .discounted_price {
+    margin-top: 1.563rem;
+    margin-left: 1.563rem;
+    display: flex;
+    align-items: center;
+    text-decoration: line-through;
+    font-weight: 100;
+    padding: 0.313rem;   
+}
+
+.discounted_price > svg {
+    font-size: 1.25rem;
+}
+.discount_details > .discount_percentage{
+
+    margin-top: 1.563rem;
+    margin-left: 0.625rem;
+    padding: 0.313rem;
+}
+
+.product_description{
+    display: flex;
+    justify-content: start;
+}
+
+.product_description > p {
+    width: 100%;
+    padding-left: 0.25rem;
+    align-self: center;
+    margin-top: 1.25rem;
+    font-family:  monospace;
+    font-weight: 100;
+    font-size: 1.125rem;
+    color: #614141;
+    line-height:1.875rem;
+}

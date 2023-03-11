@@ -1,0 +1,129 @@
+.cart_container{
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1% 15%;
+}
+
+.cart_products_container{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-gap:2rem; */
+    /* flex-direction: column; */
+}
+
+.cart_products_container .product_image_holder > img {
+
+    height: 12.5rem;
+    /* width: 100px; */
+
+}
+
+.cart_product_wrapper{
+    margin: 0.625rem 0.625rem;
+    padding: 0.313rem 0.625rem;
+    /* background-color: red; */
+    border-bottom: 1px solid #999;
+}
+
+.cart_product_wrapper .product_container{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cart_product_wrapper .product_container .product_details{
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.cart_product_wrapper .product_container .product_details h1{
+    font-size: 1.25rem;
+    font-weight: 100;
+}
+
+
+
+.bill_details_wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 20px 30px;
+}
+
+.cart_details{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart_details .heading > p{
+    font-weight: 500;
+    background-color: #2874f0;
+    color: #fff;
+    font-size: 1.125rem;
+    border-radius: 0.313rem;
+    padding: 0.625rem 6.25rem;
+    text-align: center;
+    /* background-color: #ccc; */
+    font-family: monospace;
+    border-bottom: 1px solid #888;
+    margin-bottom: 0.313rem;
+}
+
+.price_wrapper , .discount_wrapper, .payable_amount_wrapper, .deliver_charges_wrapper {
+    display: flex;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 0.313rem;
+    justify-content: space-between;
+    padding: 0.625rem;
+    margin: 0.1rem 0;
+    background-color: #eee;
+}
+
+.cart_details div:nth-child(4){
+    border-bottom: 0.125rem solid #2874f0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.checkout_button{
+    padding: 1.25rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.checkout_btn{
+    background-color: #2874f0;
+    color: #fff;
+    border: none;
+    padding: 0.625rem 1.25rem;
+   font-size: 1.1rem;
+    border-radius: 0.313rem;
+}
+
+
+.empty_cart{
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty_cart > p {
+font-size: 1.5rem;
+font-family: monospace;
+
+}

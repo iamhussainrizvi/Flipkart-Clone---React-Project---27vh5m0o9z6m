@@ -1,0 +1,179 @@
+
+.checkout_cart_wrapper{
+    margin: 1% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.checkout_cart_container .product_container{
+    width: max-content;
+    height: fit-content;
+    flex-direction: row;
+    margin: 1.25rem;
+    align-items: center;
+}   
+
+
+.checkout_cart_container .product_container .product_image_holder >img {
+
+    height: 6.25rem;
+    width: 6.25rem;
+}
+
+.checkout_cart_container .product_container .product_details{
+flex-direction: row;
+
+}
+
+.checkout_cart_container .product_container .product_details .product_name > h1 {
+
+    width: max-content
+
+}
+
+.checkout_cta{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: -1px -1px 5px #2874f0;
+    padding: 0.938rem 0.313rem;
+}
+
+.checkout_cta .order_Summary h2{
+    font-weight: 300;
+    /* background-color: red; */
+    color: rgba(0,0,0,0.8);
+}
+
+.checkout_cta  label{
+    /* background-color: red; */
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.checkout_cta .totalPayableAmount,
+.payment_options,
+.delivery_address
+{
+    color: rgba(0,0,0,0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 0.313rem;
+    box-shadow: 1px 1px 2px #2874f0;
+    width: 50%;
+    margin: 0.625rem 0;
+    padding: 1.25rem 0;
+}
+
+.totalPayableAmount span:nth-child(2){
+    text-decoration: underline;
+    font-size: 1.25rem;
+    color: rgba(0,0,0,0.7);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.payment_options select{
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    padding: 0.938rem 0.625rem;
+    font-family: monospace;
+    text-align: center;
+
+}
+
+.payment_options select  option{
+     background-color: rgba(0,0,0,0.1)
+}
+.payment_method_details{
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.payment_method_details  {
+    /* background-color: red; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.delivery_address > input {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #2874f0;
+}
+
+
+.checkout_cart_container .product_container .product_details .product_price > button {display: none;}
+
+.card_details_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.card_details_wrapper >div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 3%;
+    font-family: monospace;
+}
+.card_details_wrapper >div > label{
+    width: 75%;
+}
+
+.card_details_wrapper >div > input{
+    height: 1.875rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #2874f0;
+    width: 25%;
+}
+
+
+
+.checkout_cta .complete_payment {
+    display: flex;
+    padding: 0.625rem;
+    margin: 0.625rem;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+.complete_payment > button{
+
+    padding: 0.625rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 0.313rem;
+    width: max-content;
+    font-weight: 600;
+
+} 
+.complete_payment > button:nth-child(1) {
+
+    color: #2874f0;
+    background-color: #fff;
+    border: 1px solid #2874f0;
+}
+
+.complete_payment > button > a {
+    text-decoration: none;
+}
+
+.complete_payment > button:nth-child(2) {
+ 
+    color: #fff;
+    background-color: #2874f0;
+}

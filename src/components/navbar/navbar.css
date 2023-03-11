@@ -1,0 +1,96 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar__wrapper{
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    margin: 0;
+    background-color: #2874f0;
+    height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    width: 100% !important;
+}
+
+.navbar__wrapper >div {
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.625rem;
+    padding: 0.625rem;
+}
+
+.logo_image{
+    height: 1.25rem;
+    color: white;
+}
+
+.search{
+    height: 2.188rem;
+    background-color: #fff;
+    border: 1px solid #313233;
+    
+}
+
+.search > svg {
+    color:#2874f0
+}
+
+.search input {
+    box-sizing: border-box;
+    outline: none;
+
+    width: 31.25rem;
+    border: none;
+}
+
+.login__btn{
+    height: 1.875rem;
+    width: 6.875rem;
+    background-color: #fff;
+}
+
+.login__btn > button {
+background-color: #fff;
+outline: none;
+border: none;
+color: #2874f0;
+font-weight: 600;
+
+}
+
+.login__cart > a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    /* width: 5rem; */
+    /* background-color: red; */
+}
+
+.login__cart .cart_length_holder{
+
+    font-size: 1rem;
+    color: #ddd;
+    position: relative;
+    bottom: 0.625rem;
+    right: 0.10rem;
+    
+}
+
+
+.navbar_cta , .login__more , .login__cart {
+    font-size: 0.875rem;
+    font-family: sans-serif;
+    font-weight: 600;
+}
