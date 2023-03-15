@@ -4,6 +4,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
 
+
 function Login({closeModal}) {
 
     
@@ -18,7 +19,7 @@ function Login({closeModal}) {
     <div className='modal' >
         <div className="main_section">
             <div className="login_image_wrapper"> 
-                <img src="src\images\login_modal_image.png" alt="login_modal_image" />
+                <img src="https://i.ibb.co/3MSfWjv/login-modal-image.png" alt="login_modal_image" />
             </div>
             <div className='login_component_wrapper'>
                 {showSignIn? <SignIn onClick={handleClick} closeModal={closeModal}  />: <SignUp onClick={handleClick}/>}

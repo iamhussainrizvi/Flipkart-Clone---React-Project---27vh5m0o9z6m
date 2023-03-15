@@ -49,7 +49,7 @@ function updateUserCart(){
                 <CurrencyRupeeIcon sx={{fontSize:15}}/> { (Number(productPrice)*75).toFixed(0)} Only 
                 <span className='discount'>Rs. { (Number(productPrice)*93.75).toFixed(0)}</span>
               </h3>
-              <button style={{color:!addedToCart?"#fff":"#2874f0", backgroundColor:addedToCart?"#fff":"#2874f0"}} onClick={updateUserCart }>{addedToCart?"Remove from Cart":"Add to cart"}</button>
+              <button style={{color:!addedToCart?"#fff":"#2874f0", backgroundColor:addedToCart?"#fff":"#2874f0", cursor:"hover"}} onClick={updateUserCart }>{addedToCart?"Remove from Cart":"Add to cart"}</button>
             </div>
         </div>
         

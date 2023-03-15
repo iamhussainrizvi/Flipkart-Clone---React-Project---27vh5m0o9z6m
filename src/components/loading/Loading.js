@@ -2,7 +2,6 @@ import React from 'react'
 import "./loading.css"
 
 function  Loading() {
-    console.log("loading container");
   return (
     
       <div className="loading_container">

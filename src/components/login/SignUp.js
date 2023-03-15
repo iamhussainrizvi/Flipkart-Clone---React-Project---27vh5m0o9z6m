@@ -56,12 +56,12 @@ function addUser(e){
             <div className="sign_up_email_wrapper">
                     <div className='name_wrapper'>
                         <p>Enter your name</p>
-                        <input type="text" required />
+                        <input type="text" ref={signUpRef} required />
                     </div>
                 
                 <div className="input_container">
                     <p>Enter email</p>
-                    <input type="email"  ref={signUpRef} required />
+                    <input type="email"   required />
                 </div>
             </div>
             <div className="user_password_wrapper">
