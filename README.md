@@ -11,9 +11,9 @@
 
 ### Description
 
-- this is website is fully responsive. 
-- it has login function, 
--- adding and removing items from cart, 
--- displaing product page, 
--- displaying  all the items in cart , 
--- updating the cart, checkout page.
+-this is website is fully responsive. 
+-it has login function, 
+-adding and removing items from cart, 
+- displaing product page, 
+- displaying  all the items in cart , 
+- updating the cart, checkout page.
