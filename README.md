@@ -1,4 +1,5 @@
-# Flipkart Clone [Visit App](https://clone-flipkart.web.app/)
+# Flipkart Clone 
+[Visit App](https://clone-flipkart.web.app/)
 
 #### page header
 ![flipKart-header-img](https://user-images.githubusercontent.com/99624725/230488351-85f924bc-b5f5-429a-81b1-5b44ddbeb9ce.png)
