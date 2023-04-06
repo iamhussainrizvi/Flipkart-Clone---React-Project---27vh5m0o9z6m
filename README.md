@@ -1,4 +1,4 @@
-# Flipkart Clone
+# Flipkart Clone [Visit App](https://clone-flipkart.web.app/)
 
 #### page header
 ![flipKart-header-img](https://user-images.githubusercontent.com/99624725/230488351-85f924bc-b5f5-429a-81b1-5b44ddbeb9ce.png)
@@ -20,7 +20,7 @@
 ![payment-page-flip-img](https://user-images.githubusercontent.com/99624725/230488803-c6d13b83-949a-4d66-8052-b674ecf8d8cd.png)
 
 
-[Hosted Link](https://clone-flipkart.web.app/)
+
 
 ### Built Using 
  - React.js
