@@ -1,6 +1,20 @@
 # Flipkart Clone 
 [Visit App](https://clone-flipkart.web.app/)
 
+### Built Using 
+ - React.js
+ - react-redux
+ - react-router
+ - Material UI
+ - HTML & CSS
+
+### Description 
+- adding and removing items from cart, 
+- displaing product page, 
+- displaying  all the items in cart , 
+- updating the cart, checkout page.
+- login function,
+
 #### page header
 ![flipKart-header-img](https://user-images.githubusercontent.com/99624725/230488351-85f924bc-b5f5-429a-81b1-5b44ddbeb9ce.png)
 
@@ -19,16 +33,3 @@
 ### mobile view
 ![mobile-view-full-img-flipkart](https://user-images.githubusercontent.com/99624725/230488595-322d6987-1621-4bbf-9996-1391537f7858.png)
 
-### Built Using 
- - React.js
- - react-redux
- - react-router
- - Material UI
- - HTML & CSS
-
-### Description 
-- adding and removing items from cart, 
-- displaing product page, 
-- displaying  all the items in cart , 
-- updating the cart, checkout page.
-- login function,
