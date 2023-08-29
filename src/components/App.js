@@ -10,6 +10,9 @@ import "../styles/mobile.css"
 import MainPage from './mainPage/MainPage';
 import Header from './header/Header';
 import { createBrowserRouter, createRoutesFromElements, Route , RouterProvider } from 'react-router-dom';
+import CategoryPage from './categoryPage/CategoryPage';
+import UnavailableProducts from './unavailableProducts/UnavailableProducts';
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +23,8 @@ const router = createBrowserRouter(
       <Route path='cart' element={<Cart/>} />
       <Route path='checkout' element={<CheckoutCart/>} />
       <Route path=':id/checkout' element={<CheckoutProduct/>}/>
+      <Route path='category/unavailable' element={<UnavailableProducts/>}/>
+      <Route path="category/:category" element={ <CategoryPage/>} />
     
     </Route>
   </>)

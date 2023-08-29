@@ -92,7 +92,7 @@ function CheckoutCart({product}) {
         </div>
         <div className="complete_payment">
           {!product && <button> <Link to="/cart"> Update Cart </Link></button>}
-          <button> Pay Securely</button>
+          <button onClick={()=> alert("your Order has been placed sucessfully")} > Pay Securely</button>
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 
-.content_wrapper{
+.content_wrapper {
     margin: 2% 10%;
     display: flex;
     /* align-items: center; */
@@ -8,42 +8,74 @@
 
 }
 
-.content_wrapper > .product_container{
+.content_wrapper > *{
+    padding: 10px;
+    text-decoration: none;
+}
+
+.content_wrapper  a{
+    text-decoration: none;
+    color: #333;
+}
+
+.content_wrapper > .category-page-product-container{
+    display: flex;
+}
+
+.price-discount-wrapper{
+    display: flex;
+}
+
+.content_wrapper > .category-page-product-container > .product_container{
     width: 100%;
     display: grid;
     gap: 2rem;
-    margin: 1.25rem 0;
+    margin: 2rem 0;
     grid-template-columns: 25rem 1fr;
     /* background-color: aqua; */
 }
 
-.content_wrapper > .product_container .product_image_holder img {
+.content_wrapper > .category-page-product-container .product_container .product_image_holder img {
     height: 20rem;
     width: 20rem;
 }
 
-.content_wrapper > .product_container .product_details{
+.content_wrapper > .category-page-product-container > .product_container > .product_details{
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
 }
 
-.content_wrapper > .product_container .product_details .product_price{
-    align-self: center;
+#category-page-product-container .product_details > .product_Description{
+    /* display: block; */
+    text-align: left;
+    font-family: monospace;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 0.85rem;
+    /* font-size: inherit; */
+    /* font-weight: inherit; */
+    display: inline-block;
+    /* list-style: decimal; */
+}
+
+.content_wrapper > .category-page-product-container> .product_container .product_details .product_price{
+    align-self: left;
     font-size: 1.4rem;
 }
 
-.content_wrapper > .product_container .product_details .product_price span{
+.content_wrapper > .category-page-product-container> .product_container .product_details .product_price span{
     font-size: 1.1rem;
 }
 
-.content_wrapper > .product_container .product_name{
+.content_wrapper > .category-page-product-container> .product_container .product_name{
     padding: 1rem 2rem;
     background-color: rgba(0,0,0,0.1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.content_wrapper > .product_container .product_name h1{
-    font-size: 1.5rem; 
+.content_wrapper > .category-page-product-container> .product_container .product_name h1{
+    font-size: 1.25rem; 
     font-family: monospace; 
 }

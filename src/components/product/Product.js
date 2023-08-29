@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import {updateCart} from "../mainPage/mainPageSlice"
 import { useDispatch,useSelector } from 'react-redux'
 
-function Product({imgSrc,uid, productName, productPrice,clicked }) {
+function Product({imgSrc,uid, productName, productPrice,clicked, description }) {
 
 const [addedToCart, setAddedToCart] = useState(false);
 const dispatch = useDispatch();
@@ -18,7 +18,9 @@ useEffect( ()=> {
 const x = cart.includes(uid);
 setAddedToCart(x);
 
+
 })
+
 
 
 function updateUserCart(){
@@ -37,19 +39,26 @@ function updateUserCart(){
     <div className='product_container'>
       <Link to={"/"+uid} onClick={()=> console.log(uid)}>
         <div className="product_image_holder">
-            <img src={imgSrc} alt=""  />
-        </div>
+            <img src={imgSrc} alt=""/>
+        </div>  
       </Link>
         <div className="product_details">
+            
             <div className='product_name'>
               <h1>{productName}</h1>
             </div>
+            
+            <ul className='product_Description'> { description?.split(";").map( str => {
+              str?.charAt(0).toUpperCase();
+              return <li> {str}.</li>
+              })} </ul>
+            
             <div className='product_price'>
               <h3> 
                 <CurrencyRupeeIcon sx={{fontSize:15}}/> { (Number(productPrice)*75).toFixed(0)} Only 
                 <span className='discount'>Rs. { (Number(productPrice)*93.75).toFixed(0)}</span>
               </h3>
-              <button style={{color:!addedToCart?"#fff":"#2874f0", backgroundColor:addedToCart?"#fff":"#2874f0", cursor:"hover"}} onClick={updateUserCart }>{addedToCart?"Remove from Cart":"Add to cart"}</button>
+              <button style={{color:!addedToCart?"#fff":"#2874f0", backgroundColor:addedToCart?"#fff":"#2874f0", cursor:"pointer"}} onClick={updateUserCart }>{addedToCart?"Remove from Cart":"Add to cart"}</button>
             </div>
         </div>
         

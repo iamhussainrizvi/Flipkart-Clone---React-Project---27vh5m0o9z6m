@@ -12,12 +12,16 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
-    margin: 0 0.938rem;
+    margin: 0 0.999rem;
     cursor: pointer;
     
 }
 
-.item > img {
+.item:hover{
+    transform: scale(1.05);
+}
+
+.item > a> img , .item >img{
     height: 4rem;
 }
 

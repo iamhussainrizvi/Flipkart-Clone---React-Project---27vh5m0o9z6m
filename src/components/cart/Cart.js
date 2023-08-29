@@ -7,6 +7,7 @@ import Loading from '../loading/Loading'
 
 function Cart() {
 
+
     const cartData = useSelector( (state) => state.mainPageSlice.userCart);
     const [isLoading,setIsLoading]=useState(true);
     const [productData, setProductData] = useState([]);

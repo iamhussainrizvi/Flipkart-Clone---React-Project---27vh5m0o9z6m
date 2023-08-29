@@ -12,6 +12,7 @@ function SignUp({onClick}) {
     const dispatch = useDispatch();
 
 
+    
 useEffect(()=>{
     signUpRef.current.focus();
 });

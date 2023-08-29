@@ -1,0 +1,52 @@
+
+  
+
+.filter-container{
+    position: sticky;
+    top: 63px;
+    z-index: 49;
+    height: 80px;
+    background-color: white;
+    padding-top: 5px;
+    
+}
+
+.filter-wrapper{
+    height: 75px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#2874f0;
+    z-index: 50;
+    color: #fff;
+    font-family: monospace;
+    letter-spacing: 1px;
+    
+}
+
+.filter-wrapper  input{
+    margin-right: 20px;
+    /* margin: 20px; */
+}
+
+
+label, input{
+    margin: 2px;
+    padding: 2px;
+    font-size: 1rem;
+    font-family: monospace;
+}
+
+@media only screen and (max-width:800px){
+
+.filter-container label, .filter-container p, .filter-container div{
+    /* background-color: red; */
+    font-size: .6rem;
+}  
+
+.filter-wrapper div {
+    display: flex;
+    flex-direction: column;
+}
+
+}

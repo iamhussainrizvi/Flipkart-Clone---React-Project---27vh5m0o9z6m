@@ -13,6 +13,11 @@
     margin: 0 2px;
     border-radius: 5px;
 }
+
+.product_container:hover {
+    transform: scale(1.01);
+}
+
 .product_image_holder{
     padding: 0.425rem 1.25rem;
     
@@ -28,20 +33,21 @@
     display: flex;
     align-items: center;
     gap:1rem;
-    font-size: .625rem;
+    /* font-size: .725rem; */
     padding: 0 .625rem;
 }
 
 .product_name h1{
-    font-size: 0.775rem;
+    font-size: 0.875rem;
     text-align: center;
+    max-height: 30px;
+    margin-bottom: 5px;
     color: #212121;
-    /* background-color: red; */
-    font-family: monospace;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 200;
     
-
 }
+
 
 .product_price {
     color:#388e3c ;
@@ -63,6 +69,15 @@
     margin-top: 0.4rem;
 }
 
+.product_details .product_Description {
+    font-size: 1.3rem;
+    padding: 0.525rem 1.25rem;
+    width: 80%;
+    display: none;    
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    /* letter-spacing: 10px; */
+
+}
 
 .product_price > button {
     border: none;

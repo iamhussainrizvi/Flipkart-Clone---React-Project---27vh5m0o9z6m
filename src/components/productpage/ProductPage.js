@@ -6,11 +6,18 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import "./productPage.css"
 
+import Name from '../NameComponent/Name';
+import Price from '../PriceComponenet/Price';
+
 import StarIcon from '@mui/icons-material/Star';
-import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
 import Loading from '../loading/Loading';
+import Description from '../productDesccriptionComponent/Description';
+import Discount from '../discountComponent/Discount';
+import Picture from '../productImageComponent/Picture';
+// import { Discount } from '@mui/icons-material';
+
 
 function ProductPage() {
 
@@ -33,7 +40,7 @@ function ProductPage() {
   })
   
   function handleCartClick(){
-    console.log(cart);
+    // console.log(cart);
     // console.log("checking",ckeckCartForItem())
     setIsItemInCart( prev => !prev);
     dispatch( updateCart(id) );
@@ -52,7 +59,7 @@ function ProductPage() {
       // console.log("data",data); 
     });
 
-  },[]);
+  },[id]);
 
   
   return !isLoading?
@@ -60,9 +67,7 @@ function ProductPage() {
     <>
       <div className='Product_Page_wrapper'>
         <div className="left_wrapper">
-          <div className="product_image_holder">
-            <img src={productData?.image } alt="" />
-          </div>
+          <Picture imageSrc={productData?.image} />
           <div className='call_to_action'>
               <div className="cart">
                   <ShoppingCartIcon/>
@@ -78,49 +83,10 @@ function ProductPage() {
           
 
         <div className='product_data_details'>
-          <div className='product_title' >
-            <h1 className='title'>{productData?.title} </h1>
-            <div className="product_details">
-              <div className='rating_wrapper'>
-                <div className='rating'>
-                  <h4> {productData?.rating?.rate} </h4>
-                  <StarIcon/>
-                </div>
-              </div>
-          
-              <div className='reviews_wrapper'>
-                <h4> {(Number(productData?.rating?.count)*(3*25)).toFixed(0)} Ratings & {productData?.rating?.count} Reviews </h4>
-              </div>
-            </div>
-          </div>
-
-          <div className="product_price_wrapper">
-            <div className='price_wrapper'>
-              <h1>
-                <CurrencyRupeeIcon/>
-                {Number(productData?.price)*75}
-              </h1> 
-            </div>
-
-            <div className="discount_details">
-              <p className='discounted_price'> <CurrencyRupeeIcon/> {(Number(productData?.price)*93.75).toFixed(0) } </p>
-              <p className='discount_percentage'>25% off</p>
-            </div>
-          </div>
-          
-          <div className="product_description">
-            <p className='description'>
-              {productData?.description}
-            </p>
-          </div>
-        
-        
-        
+          <Name productName={productData?.title} rateCount={productData?.rating.count} rating={productData?.rating.rate}/>
+          <Discount productPrice={productData?.price} />
+          <Description productDescription={productData?.description} />
         </div>
-
-
-
-
       </div>
     </>
   ):(<div className="loader"><Loading/></div> )
